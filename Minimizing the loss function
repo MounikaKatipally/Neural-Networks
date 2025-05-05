@@ -1,0 +1,9 @@
+a.data+=0.001*a.grad
+b.data+=0.001*b.grad
+c.data+=0.001*c.grad
+f.data+=0.001*f.grad
+
+e=a*b
+d=e+c
+L=d*f
+print(L.data)
